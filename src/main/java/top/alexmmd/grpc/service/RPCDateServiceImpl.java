@@ -17,6 +17,7 @@ import java.time.format.DateTimeFormatter;
 public class RPCDateServiceImpl extends RPCDateServiceGrpc.RPCDateServiceImplBase {
     @Override
     public void getDate(RPCDateRequest request, StreamObserver<RPCDateResponse> responseObserver) {
+        System.out.println("request = " + request);
         // 请求结果,我们定义的
         RPCDateResponse rpcDateResponse = null;
         String userName = request.getUserName();

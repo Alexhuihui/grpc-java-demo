@@ -11,7 +11,7 @@ import top.alexmmd.grpc.api.RPCDateServiceGrpc;
  * @date 2022/2/10 14:42
  */
 public class GRPCClient {
-    private static final String host = "localhost";
+    private static final String host = "127.0.0.1";
     private static final int serverPort = 9999;
 
     public static void main(String[] args) throws Exception {
